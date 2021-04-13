@@ -1,0 +1,20 @@
+{
+  "name": "BlockDistractions",
+  "description": "Extension to block spesific URL",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["./background.js"]
+  },
+  "options_page": "./options.html",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "storage",
+    "https://*/*",
+    "http://*/*"
+  ]
+}

@@ -1,0 +1,138 @@
+:root {
+  --hex-shadow: #EDC7B7;
+  --hex-background: #EEE2DC;
+  --hex-main-dark: #123C69;
+  --hex-main-red: #AC3B61;
+}
+
+html {
+  background: var(--hex-background);
+  color: var(--hex-main-dark);
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  margin: .5em 0;
+  text-align: center;
+  padding: .25em;
+  font-size: 1.5rem;
+  font-family: 'Averia Serif Libre';
+  border: .2em solid var(--hex-main-red);
+  border-radius: .2em;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Averia Serif Libre';
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+#addDomain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addDomain input[type=text] {
+  font-size: 1.25rem;
+  padding: .25em;
+  text-align: center;
+  border: .25em solid var(--hex-shadow);
+  border-radius: 2em;
+  font-family: 'Averia Serif Libre';
+  width: 50%;
+}
+
+#addDomain input[type=text]:focus {
+  outline: none;
+}
+
+#addDomain button {
+  border: none;
+  border-radius: 2em;
+  font-size: 1.25rem;
+  font-family: 'Averia Serif Libre';
+  padding: .5em .75em;
+  background: var(--hex-shadow);
+  cursor: pointer;
+  margin-left: .5em;
+}
+
+#addDomain button:focus {
+  border: none;
+  outline: none;
+}
+
+#addDomain button:active {
+  border: none;
+  background: var(--hex-main-red);
+  color: var(--hex-background);
+}
+
+/* Time interval */
+#timeInterval {
+  margin: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+#timeInterval .time-chooser {
+  margin: 0 1em;
+  display: flex;
+}
+
+.interval-label {
+  font-size: 1.5rem;
+}
+
+.time-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 .75em;
+}
+
+.time-input img {
+  width: 2.5em;
+}
+
+.time-chooser input[type=number] {
+  width: 3rem;
+}
+
+.time-chooser img {
+  cursor: pointer;
+}
+
+/* BlockedDomains Table */
+#blockedDomains table {
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+#blockedDomains table thead {
+  font-size: 1.5rem;
+  color: var(--hex-main-red);
+}
+
+#blockedDomains table .discardButton {
+  font-size: 3rem;
+  color: var(--hex-main-red);
+  cursor: pointer;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BLock Distractions</title>
+
+    <script src="jQuery-3.6.0.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./optionsScript.js"></script>
+
+    <link rel="stylesheet" media="screen" href="optionsStyle.css"></link>
+  </head>
+  <body>
+
+    <header>
+      <h1>Domains to Block</h1>
+    </header>
+
+    <main>
+
+      <div id="addDomain">
+
+        <input type="text" id="domainToBlock" placeholder="www.timespender.com"/>
+
+        <button id="blockDomain">
+          <span>Block</span>
+        </button>
+
+      </div>
+
+    <div id="timeInterval">
+
+      <div id="fromClause">
+        <div class="interval-label">
+          <span>From</span>
+        </div>
+        <div id="from" class="time-chooser">
+          <div class="hour time-input">
+            <img src="up-arrow.svg" class="rotate0"/>
+            <input type="number" value="00" min="00" max="24" >
+            <img src="up-arrow.svg" class="rotate180" />
+          </div>
+          <div class="minute time-input">
+            <img src="up-arrow.svg" class="rotate0" />
+            <input type="number" value="00" min="00" max="59">
+            <img src="up-arrow.svg" class="rotate180"/>
+          </div>
+        </div>
+      </div>
+
+      <div id="toClause">
+        <div class="interval-label">
+          <span>To</span>
+        </div>
+        <div id="to" class="time-chooser">
+          <div class="hour time-input">
+            <img src="up-arrow.svg" class="rotate0"/>
+            <input type="number" value="24" min="00" max="24">
+            <img src="up-arrow.svg" class="rotate180"/>
+          </div>
+          <div class="minute time-input">
+            <img src="up-arrow.svg" class="rotate0"/>
+            <input type="number" value="00" min="00" max="59">
+            <img src="up-arrow.svg" class="rotate180"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+      <div id="blockedDomains">
+
+        <table>
+
+          <thead>
+            <th></th>
+            <th>Domain</th>
+            <th>From</th>
+            <th>To</th>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+
+      </div>
+    </main>
+  </body>
+</html>
